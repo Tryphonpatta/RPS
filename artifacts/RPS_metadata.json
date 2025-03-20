@@ -29,25 +29,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "allowPlayers",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "cancelGame",
 				"outputs": [],
@@ -265,11 +246,11 @@
 			]
 		},
 		"RPS.sol": {
-			"keccak256": "0x423f8f3f8ea4a32f51281dc0b1cfdaa7841fcece252ae8ef2d9e9f6cd550635b",
+			"keccak256": "0xa8ab1008c7be410c7736af241576635d787ab8e10b7b30ad991754881658804a",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://fa35eed1f225ea6cc7b594ec5305b990bad7ad7a45f6f5c726aedf6776986d86",
-				"dweb:/ipfs/QmahS6QaTuNzGwJ3BVsLpxd62LVMLyqXp9FdzzVBENVxyG"
+				"bzz-raw://0e11a990e78e1b9a05f2090985551829ccc3f62e6b27713736e6ca1ef5b613f9",
+				"dweb:/ipfs/QmSw5R81y7BJ6CQvzWnePBwcLXxad1yG16SX1KpYVeBfri"
 			]
 		},
 		"TimeUnit.sol": {

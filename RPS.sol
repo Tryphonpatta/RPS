@@ -15,7 +15,7 @@ contract RPS {
     mapping (address => uint) public player_choice; // 0 - Scissors, 1 - Paper , 2 - Rock, 3 - Lizard, 4 - Spock
     mapping(address => bool) public player_not_played;
     address[] public players;
-	address[] public allowPlayers = [0x5B38Da6a701c568545dCfcB03FcB875f56beddC4, 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2,0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db,0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB];
+	// address[] public allowPlayers = [0x5B38Da6a701c568545dCfcB03FcB875f56beddC4, 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2,0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db,0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB];
 
     uint public numInput = 0;
     uint public timeLimit = 30;
@@ -29,9 +29,9 @@ contract RPS {
             require(msg.sender != players[0]);
         }
         require(msg.value == 1 ether);
-		if(allowPlayers[0] != msg.sender && allowPlayers[1] != msg.sender && allowPlayers[2] != msg.sender && allowPlayers[3] != msg.sender){
-			require(false, "You are not allowed to play this game");
-		}
+		// if(allowPlayers[0] != msg.sender && allowPlayers[1] != msg.sender && allowPlayers[2] != msg.sender && allowPlayers[3] != msg.sender){
+		// 	require(false, "You are not allowed to play this game");
+		// }
         reward += msg.value;
         player_not_played[msg.sender] = true;
         players.push(msg.sender);
