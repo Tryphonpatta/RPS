@@ -16,6 +16,11 @@
 						"internalType": "address",
 						"name": "_commitReveal",
 						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -23,14 +28,27 @@
 			},
 			{
 				"inputs": [],
-				"name": "addPlayer",
-				"outputs": [],
-				"stateMutability": "payable",
+				"name": "REQUIRED_AMOUNT",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "cancelGame",
+				"name": "addPlayer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "claimTimeoutWin",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -56,6 +74,19 @@
 						"internalType": "contract CommitReveal",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fundsCaptured",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -208,6 +239,19 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -245,12 +289,20 @@
 				"dweb:/ipfs/QmXmumARp8gSUXtYYxZoVTAVN2YTFGyJi9kFRMvF4BCwXT"
 			]
 		},
+		"IERC20.sol": {
+			"keccak256": "0x586585c53ba97f4d5c8017a48b61ae5972dc138e0ed9f6f6a729c37a65668b4e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c22034358192444b6a9805fea9108899adf9de90adf93a1bb9ec34c2d4b44fbf",
+				"dweb:/ipfs/QmVKmjNNLQnqd1AzfSpEfshJruTvgiNREq72iC2mcuH8nR"
+			]
+		},
 		"RPS.sol": {
-			"keccak256": "0xa8ab1008c7be410c7736af241576635d787ab8e10b7b30ad991754881658804a",
+			"keccak256": "0xf36e22440fc9108dd6cb8d65694629f80dc203b35c938011c53a4e1c5aae621a",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0e11a990e78e1b9a05f2090985551829ccc3f62e6b27713736e6ca1ef5b613f9",
-				"dweb:/ipfs/QmSw5R81y7BJ6CQvzWnePBwcLXxad1yG16SX1KpYVeBfri"
+				"bzz-raw://c079cbb7d29d707983b0ee9aa694d63624b2b109d205d6fcdd1ed9ba06b5eef5",
+				"dweb:/ipfs/QmQxpJFaYLo8UKG2ttony6E1LntbDJ4KfjCDXyJiDPVL9x"
 			]
 		},
 		"TimeUnit.sol": {
